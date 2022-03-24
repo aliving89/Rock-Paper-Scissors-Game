@@ -44,9 +44,14 @@ while player_choice is False:
     print("  Player Lives:", player_lives, "/", total_lives)
     print("======================================================")
 
+    print("Choose your weapon - or type quit to exit\n")
     player_choice = choices[1]
 
     player_choice = input("Choose rock, paper, or scissors: \n ")
+
+    if player_choice == "quit":
+        print("You chose to quit")
+        exit()
 
     print("User chose: " + player_choice)
 
